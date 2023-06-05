@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	position: relative;
+	overflow-x: hidden;
+	min-height: 100vh;
+	box-sizing: border-box;
+	font-family: $font-primary;
+	font-size: calc((100 / 1920) * 1vw); // px to rem
+	font-weight: 500;
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	text-decoration-skip: objects;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	font-size: 16rem;
+	line-height: 150%;
+	background: url('../img/base/page_bg.png') center 0 / 2000px $main_bg;
+	color: $color_black;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+p {
+	margin: 0;
+}
+
+a,
+button {
+	outline: none;
+	transition: $duration-normal;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+svg {
+	display: block;
+	flex: 0 0 auto;
+	width: 100%;
+	height: 100%;
+	fill: currentColor;
+}
+
+figure,
+picture {
+	display: inline-block;
+	margin: 0;
+	line-height: 0;
+
+	img {
+		width: 100%;
+	}
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+	user-select: none;
+}
+
+img[draggable="false"] {
+	pointer-events: none;
+	// stylelint-disable-next-line
+	-webkit-user-drag: none;
+}
+
+fieldset {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+video {
+	outline: none;
+	width: 100%;
+	height: 100%;
+}
+
+iframe {
+	display: block;
+}
+
+input {
+	font-weight: 500;
+
+	&::placeholder {
+		color: inherit;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1680rem;
+	margin: 0 auto;
+
+	&_full {
+		max-width: 1920rem;
+	}
+}
+
+
+/* stylelint-disable */
+/*
+* Немедленно переместите любую анимацию в конечную точку, если пользователь установил свое устройство в положение "prefers reduced motion".
+* Это может привести к плохим(непреднамеренным) последствиям. Удалите по мере необходимости и напишите свой собственный код для prefers-reduced-motion.
+*/
+// @media (prefers-reduced-motion: reduce) {
+// 	*,
+// 	*:before,
+// 	*:after {
+// 		animation-duration: 0.001s !important;
+// 		animation-delay: 0s !important;
+// 		transition-duration: 0.001s !important;
+// 		transition-delay: 0s !important;
+// 	}
+// }
+/* stylelint-enable */
+
+
+@media (max-width: 48em) {
+	html {
+		font-size: calc((100 / 375) * 1vw);  // 375 = mobile width
+	}
+}
