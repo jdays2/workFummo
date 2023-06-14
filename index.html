@@ -4,12 +4,47 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/styles.min.css">
 	<title>Fummo | Главная</title>
 </head>
 <body>
-	<div class="container">
-		<h1>ELINA</h1>
-	</div>
+	<section class="section banner">
+		<div class="swiper swiper_banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide">
+					<div class="banner_bg">
+						<video src="img/banner/slide_img1.jpg" autoplay poster="img/banner/slide_img1.jpg"></video>
+					</div>
+					<div class="container">
+						<ol class="slide__list">
+							<li>
+								<span class="num">01</span>
+								<span>эксклюзивные вкусы</span>
+							</li>
+							<li>
+								<span class="num">02</span>
+								<span>премиальное качество</span>
+							</li>
+							<li>
+								<span class="num">03</span>
+								<span>инновации и технологии</span>
+							</li>
+						</ol>
+						<div class="slide__inner">
+							<h1 class="slide__title"><span>Новый</span> лидер на рынке электронных сигарет</h1>
+							<a href="" class="btn">о компании</a>
+						</div>
+						<p class="slide__text">откройте для себя наши новинки <strong>limited</strong> & <strong>grand</strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</section>
+
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

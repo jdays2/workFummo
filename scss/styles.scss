@@ -2,10 +2,11 @@
 @import "fonts";
 @import "base";
 
+@import "components/banner";
+
 h1 {
 	font-family: AkzidenzGroteskPro;
 	font-weight: 700;
 	font-size: 45rem;
 	line-height: 58rem;
-	color: red;
 }
