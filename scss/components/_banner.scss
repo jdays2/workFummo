@@ -2,6 +2,19 @@
 
 	.swiper {
 		overflow: visible;
+
+		&-button {
+	
+			&-prev,
+			&-next {
+				position: relative;
+				top: unset;
+				left: unset;
+				right: unset;
+				margin: 0;
+			}
+		}
+
 	}
 
 	.slide {
@@ -9,10 +22,14 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		padding-bottom: 50rem;
 
 		&__list {
+			position: relative;
 			align-self: center;
 			max-width: 295rem;
+			margin: 0;
+			padding: 0;
 
 			li {
 				display: flex;
@@ -21,10 +38,11 @@
 				font-weight: 700;
 				font-size: 18rem;
 				line-height: 23rem;
+				letter-spacing: 0.5rem;
 				text-transform: uppercase;
 
 				&:not(:last-child) {
-					margin-bottom: 50rem;
+					margin-bottom: 40rem;
 				}
 			}
 
@@ -35,12 +53,25 @@
 				font-family: EuclidCircularA, sans-serif;
 				leading-trim: both;
 				text-edge: cap;
-				letter-spacing: 0.03em;
 				background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 150%);
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 				background-clip: text;
 				text-fill-color: transparent;
+			}
+
+			.line {
+				position: absolute;
+				top: -184rem;
+				right: -143rem;			
+				width: 547rem;
+				height: 581rem;
+				pointer-events: none;
+
+				svg {
+					display: block;
+					width: 100%;
+				}
 			}
 		}
 
@@ -61,13 +92,23 @@
 		&__text {
 			align-self: center;
 			max-width: 307rem;
+			font-size: 28rem;
+			line-height: 36rem;
+
+			strong,
+			span {
+				font-weight: 600;
+				color: $color_pink;
+			}
 		}
 	}
 
 	.container {
+		position: relative;
 		flex-grow: 1;
 		display: flex;
 		justify-content: space-between;
+		max-width: 1722rem;
 		height: 100%;
 	}
 

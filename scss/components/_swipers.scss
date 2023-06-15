@@ -1,0 +1,63 @@
+@keyframes arrow_move {
+	1% {
+		width: 27rem;
+	}
+	25% {
+		width: 50rem;
+	}
+	50% {
+		width: 27rem;
+	}
+	75% {
+		width: 50rem;
+	}
+}
+
+.swiper {
+
+	&_buttons {
+		max-width: 1621rem !important;
+		bottom: 152rem;
+	}
+
+	&-button {
+
+		&-prev,
+		&-next {
+			width: 100rem;
+			height: 30rem;
+			font-weight: 500;
+			font-size: 18rem;
+			line-height: 23rem;
+			color: #fff;
+			user-select: none;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 100%;
+				display: block;
+				width: 27rem;
+				height: 21rem;
+				background: url(../img/icons/arrow.svg) no-repeat center/contain;
+				transform: translateY(-50%);
+				transition: 300ms;
+			}
+
+			&:hover {
+				&::after {
+					animation: arrow_move 2s linear infinite;
+				}
+			}
+		}
+
+		&-prev {
+			&::after {
+				left: auto;
+				right: 100%;
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+}
