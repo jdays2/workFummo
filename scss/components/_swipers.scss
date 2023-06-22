@@ -15,6 +15,23 @@
 
 .swiper {
 
+	&_control {
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding: 0 27rem;
+
+		.swiper-button-next,
+		.swiper-button-prev {
+			position: relative;
+			top: unset;
+			right: unset;
+			bottom: unset;
+			left: unset;
+			margin: 0;
+		}
+	}
+
 	&_buttons {
 		max-width: 1621rem !important;
 		bottom: 152rem;
@@ -31,6 +48,10 @@
 			line-height: 23rem;
 			color: #fff;
 			user-select: none;
+			background: none;
+			border: none;
+			outline: none;
+			font-family: inherit;
 
 			&::after {
 				content: '';

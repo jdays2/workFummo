@@ -2,10 +2,13 @@
 @import "fonts";
 @import "base";
 
+@import "components/header";
+@import "components/section";
+@import "components/btns";
 @import "components/swipers";
 @import "components/banner";
 @import "components/socials";
-@import "components/header";
+@import "components/novelties";
 
 h1 {
 	font-family: AkzidenzGroteskPro;
