@@ -3,8 +3,18 @@
 	.swiper {
 		overflow: visible;
 
+		.container {
+			position: relative;
+			flex-grow: 1;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			max-width: 1722rem;
+			height: 100%;
+		}
+
 		&-button {
-	
+
 			&-prev,
 			&-next {
 				position: relative;
@@ -21,14 +31,13 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh;
-		padding-bottom: 50rem;
+		min-height: 105.3vh;
 
 		&__list {
 			position: relative;
-			align-self: center;
+			align-self: flex-start;
 			max-width: 295rem;
-			margin: 0;
+			margin: 20.2% 10rem 0 0;
 			padding: 0;
 
 			li {
@@ -49,7 +58,8 @@
 			.num {
 				min-width: 23rem;
 				text-align: center;
-				margin-right: 31rem;
+				margin-left: -8rem;
+				margin-right: 27rem;
 				font-family: EuclidCircularA, sans-serif;
 				leading-trim: both;
 				text-edge: cap;
@@ -63,7 +73,7 @@
 			.line {
 				position: absolute;
 				top: -184rem;
-				right: -143rem;			
+				right: -131rem;
 				width: 547rem;
 				height: 581rem;
 				pointer-events: none;
@@ -81,7 +91,7 @@
 		}
 
 		&__title {
-			margin: 0 0 30rem;
+			margin: 0 0 28rem;
 			text-transform: uppercase;
 
 			span {
@@ -90,8 +100,10 @@
 		}
 
 		&__text {
-			align-self: center;
+			align-self: flex-start;
 			max-width: 307rem;
+			margin-right: 8rem;
+			margin-top: 18%;
 			font-size: 28rem;
 			line-height: 36rem;
 
@@ -103,19 +115,53 @@
 		}
 	}
 
-	.container {
+	&__bottom {
 		position: relative;
-		flex-grow: 1;
-		display: flex;
-		justify-content: space-between;
-		max-width: 1722rem;
-		height: 100%;
+		margin-top: -7rem;
+		z-index: 2;
+
+		.container {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+
+			&::after,
+			&::before {
+				content: '';
+				position: absolute;
+				top: -33rem;
+				left: -120rem;
+				width: 979rem;
+				height: 281.5rem;
+				background: url(../img/banner/slide_bottom_line.svg) no-repeat;
+				pointer-events: none;
+			}
+
+			&::after {
+				left: auto;
+				right: -120rem;
+				transform: scale(-1,1);
+			}
+		}
+	}
+
+	.scroll_down {
+		font-family: inherit;
+		font-size: 18rem;
+		font-weight: 500;
+		background: none;
+		border: none;
+		outline: none;
+		color: $color_white;
 	}
 
 	&_bg {
 		position: absolute;
 		top: 0;
 		left: 0;
+		right: 0;
 		height: auto;
 		z-index: -1;
 

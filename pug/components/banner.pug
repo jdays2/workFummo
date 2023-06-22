@@ -1,0 +1,79 @@
+section.section.banner
+	.swiper.swiper_banner
+		.swiper-wrapper
+
+			.swiper-slide.slide
+				.banner_bg
+					video(src="img/banner/slide_img1.jpg" autoplay poster="img/banner/slide_img1.jpg")
+				.container
+					ol.slide__list
+						li
+							span.num 01
+							span эксклюзивные вкусы
+						li
+							span.num 02
+							span премиальное качество
+						li
+							span.num 03
+							span инновации и&nbspтехнологии
+
+						.line
+							include ../svg/slide_list
+
+					.slide__inner
+						h1.slide__title
+							span Новый 
+							| лидер на рынке электронных сигарет
+						a.btn(href="")
+							span о компании
+							include ../svg/btn_arrow
+
+					p.slide__text
+						| откройте для себя наши новинки 
+						strong limited 
+						| & 
+						strong grand
+
+			.swiper-slide.slide
+				.banner_bg
+					video(src="img/banner/slide_img2.jpg" autoplay poster="img/banner/slide_img2.jpg")
+				.container
+					ol.slide__list
+						li
+							span.num 01
+							span эксклюзивные вкусы
+						li
+							span.num 02
+							span премиальное качество
+						li
+							span.num 03
+							span инновации и&nbspтехнологии
+
+						.line
+							include ../svg/slide_list
+					.slide__inner
+						h1.slide__title
+							span Новый 
+							| лидер на рынке электронных сигарет
+						a.btn(href="")
+							span о компании
+							include ../svg/btn_arrow
+
+					p.slide__text
+						| откройте для себя наши новинки 
+						strong limited 
+						| & 
+						strong grand
+
+		.swiper_buttons.container
+			.swiper-button-prev назад
+			.swiper-button-next вперед
+
+	.banner__bottom
+		.container
+			button.scroll_down(type="button") scroll down
+			.socials
+				a.social(href="" title="VK")
+					include ../svg/vk
+				a.social(href="" title="YouTube")
+					include ../svg/youtube

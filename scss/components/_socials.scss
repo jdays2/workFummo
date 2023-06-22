@@ -1,0 +1,21 @@
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 28rem;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 27rem;
+	height: 27rem;
+
+	svg {
+		display: block;
+		width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+}
