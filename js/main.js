@@ -14,4 +14,21 @@ document.addEventListener("DOMContentLoaded", function(evt) {
 			prevEl: ".novelties__top .swiper-button-prev",
 		},
 	});
+
+	$(document).on('click', '.novelties__filter_btn', function(evt) {
+		evt.preventDefault();
+		let $this = $(this);
+		let thisPos = $this.position().left;
+		let thisWidth = $this.outerWidth();
+		let $indicator = $this.siblings('.indicator');
+
+		$('.novelties__filter_btn').removeClass('active');
+		$this.addClass('active');
+
+		$indicator.css({
+			left: thisPos + 'rem',
+			width: thisWidth + 'rem',
+		});
+		
+	})
 })

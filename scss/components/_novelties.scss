@@ -1,8 +1,150 @@
 .novelties {
+	position: relative;
+	margin-bottom: 200rem;
+	z-index: 2;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__top {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 40rem;
+		margin-bottom: 36rem;
+	}
+
+	&__filter {
+		align-self: center;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30rem;
+		margin-bottom: 127rem;
+
+		.indicator {
+			position: absolute;
+			bottom: -10rem;
+			left: 0;
+			width: 51rem;
+			height: 6rem;
+			transition: 500ms;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				height: 6rem;
+				width: 6rem;
+				background-color: $color_pink;
+				border-radius: 6rem;
+			}
+		}
+
+		&_btn {
+			padding: 5rem 10rem;
+			font-size: 18rem;
+			line-height: 100%;
+			font-weight: 500;
+			border: none;
+			background: none;
+			outline: none;
+			font-family: inherit;
+			color: $gray_text;
+			transition: color 500ms;
+
+			&.active {
+				color: $color_white;
+			}
+		}
+	}
+}
+
+
+.novelty {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 52rem 22rem 35rem;
+
+	&__border {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-top: none;
+		border-bottom: none;
+		pointer-events: none;
+
+		&::after,
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 50%;
+			background: url(../img/novelties/novelties_slide_border.svg) no-repeat;
+			background-size: 100%;
+			overflow: hidden;
+		}
+
+		&::after {
+			bottom: 0;
+			top: auto;
+			background-position: bottom;
+		}
+	}
+
+	&__title {
+		max-width: 250rem;
+		margin-bottom: 31rem;
+		text-align: center;
+		font-size: 24rem;
+		line-height: 130%;
+		font-family: AkzidenzGroteskPro;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__img {
+		position: relative;
+		z-index: -1;
+		margin-bottom: -105rem;
+
+		img {}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 28rem;
+		font-size: 18rem;
+		line-height: 23rem;
+		font-weight: 300;
+
+		strong {
+			font-size: 20rem;
+			font-weight: 700;
+			letter-spacing: 0.6rem;
+		}
+	}
+}
+
+.swiper_novelties {
+	width: calc(100% + 65rem);
+	margin-left: -32.5rem;
+	margin-right: -32.5rem;
+
+	.swiper-slide {
+		padding-left: 32.5rem;
+		padding-right: 32.5rem;
 	}
 }
