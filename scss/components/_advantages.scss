@@ -1,0 +1,38 @@
+.advantages {
+
+	&__top {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+
+		.btn {
+			margin-bottom: 11rem;
+		}
+	}
+
+	&__title {
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		max-width: 800rem;
+
+		span {
+			position: relative;
+			top: -42rem;
+			margin-left: 5rem;
+			margin-right: 16rem;
+			font-size: 100rem;
+			line-height: 1;
+			color: $color_pink;
+		}
+
+		> svg {
+			position: absolute;
+			bottom: 4rem;
+			left: 38rem;
+			display: block;
+			width: 50rem;
+			height: 51rem;
+		}
+	}
+}

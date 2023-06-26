@@ -44,7 +44,7 @@
 	}
 
 	&::before {
-		transform: translateX(-100%);
+		transform: translateX(-101%);
 		background-color: $color_pink;
 	}
 
@@ -58,7 +58,7 @@
 		}
 
 		&::after {
-			transform: translateX(-100%);
+			transform: translateX(-101%);
 		}
 		
 		&::before {
