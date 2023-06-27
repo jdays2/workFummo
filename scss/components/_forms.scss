@@ -37,6 +37,10 @@
 		position: relative;
 		display: block;
 		width: 100%;
+
+		+ label {
+			margin-top: 30rem;
+		}
 	}
 
 	.label_border {
@@ -45,6 +49,24 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
+		display: flex;
+		flex-direction: column;
+
+		&::before,
+		&::after {
+			content: '';
+			flex-grow: 1;
+			min-height: 45rem;
+			background: url(../img/forms/label_border.svg) no-repeat;
+			background-size: 100%;
+			overflow: hidden;
+		}
+
+		&::after {
+			height: 20rem;
+			min-height: auto;
+			background-position: bottom;
+		}
 	}
 
 	textarea {
@@ -53,11 +75,21 @@
 
 	textarea,
 	input {
+		display: block;
+		width: 100%;
+		padding: 24rem 50rem;
+		font-size: 18rem;
+		line-height: 150%;
+		font-weight: 500;
 		outline: none;
 		border: none;
 		background: none;
 		color: $color_white;
 		font-family: inherit;
+	}
+
+	.btn {
+		margin-top: 50rem;
 	}
 
 }
