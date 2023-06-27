@@ -1,0 +1,32 @@
+section.section.form.form_simple
+	.container
+		.form__left
+			.section__title.form__title
+				| Напишите нам,
+				br
+				| и мы предоставим всю  
+				span  необходимую 
+				| информацию
+			.form__img
+				img(src="img/forms/form_simple.png", alt="")
+
+		form
+			label
+				span.label_border
+				input(type="text" placeholder="ФИО")
+
+			label
+				span.label_border
+				input(type="text" placeholder="+7 ___ ___ __ __")
+
+			label
+				span.label_border
+				input(type="text" placeholder="E-mail")
+
+			label
+				span.label_border
+				textarea(rows="1" placeholder="Сообщение")
+
+			button.btn(type="submit")
+				span отправить
+				include ../svg/btn_arrow

@@ -12,6 +12,10 @@
 	border-radius: 30rem;
 	overflow: hidden;
 	transition: 500ms;
+	background: none;
+	border: none;
+	outline: none;
+	font-family: inherit;
 
 	&_simple {
 		padding-right: 34rem;

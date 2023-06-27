@@ -1,0 +1,63 @@
+.form {
+
+	.container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		max-width: 730rem;
+	}
+
+	&__title {
+		span {
+			color: $color_pink;
+		}
+	}
+
+	&_simple {
+		form {
+			width: 100%;
+			max-width: 633rem;
+		}
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	label {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+
+	.label_border {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+
+	textarea,
+	input {
+		outline: none;
+		border: none;
+		background: none;
+		color: $color_white;
+		font-family: inherit;
+	}
+
+}

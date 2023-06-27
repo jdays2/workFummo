@@ -111,8 +111,9 @@ iframe {
 	display: block;
 }
 
+textarea,
 input {
-	font-weight: 500;
+	font-family: inherit;
 
 	&::placeholder {
 		color: inherit;
