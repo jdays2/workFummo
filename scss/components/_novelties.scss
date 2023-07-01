@@ -113,10 +113,39 @@
 
 	&__img {
 		position: relative;
-		z-index: -1;
-		margin-bottom: -105rem;
+		width: 260rem;
+		height: 260rem;
+		margin-bottom: -78rem;
 
-		img {}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__bg {
+		position: relative;
+		width: 327rem;
+		height: 203rem;
+		margin-bottom: -104rem;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		z-index: -1;
+
+		&_yellow {
+			background-image: url(../img/novelties/novelty_bg_yellow.png);
+		}
+		&_blue {
+			background-image: url(../img/novelties/novelty_bg_blue.png);
+		}
+		&_green {
+			background-image: url(../img/novelties/novelty_bg_green.png);
+		}
+		&_red {
+			background-image: url(../img/novelties/novelty_bg_red.png);
+		}
 	}
 
 	&__info {
@@ -144,5 +173,93 @@
 	.swiper-slide {
 		padding-left: 32.5rem;
 		padding-right: 32.5rem;
+	}
+}
+
+@media (max-width:48em) {
+	.novelties {
+		margin-bottom: 118rem;
+		padding-bottom: 91rem;
+
+		.swiper_control {
+			display: none;
+		}
+
+		&__top {
+			justify-content: center;
+			margin-bottom: 25rem;
+
+			.btn {
+				position: absolute;
+				bottom: 0;
+				left: 20rem;
+			}
+		}
+
+		&__filter {
+			gap: 34rem;
+			margin-bottom: 47rem;
+
+			.indicator {
+				bottom: -5rem;
+				width: 46rem;
+			}
+
+			&_btn {
+				font-size: 15rem;
+				line-height: 19rem;
+
+				&.active {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.novelty {
+		padding: 28rem 16rem 22rem 16rem;
+
+		&__title {
+			max-width: 170rem;
+			margin-bottom: 28rem;
+			font-size: 16rem;
+			line-height: 20rem;
+		}
+
+		&__img {
+			width: 165rem;
+			height: 165rem;
+			margin-bottom: -63rem;
+		}
+
+		&__bg {
+			width: 239rem;
+			height: 151rem;
+			margin-bottom: -77rem;
+		}
+
+		&__info {
+			margin-bottom: 16rem;
+			font-size: 12rem;
+			line-height: 23rem;
+
+			strong {
+				font-size: 15rem;
+			}
+		}
+	}
+
+
+	.swiper_novelties {
+		width: calc(100% + 40rem);
+		margin-left: -20rem;
+		margin-right: -20rem;
+		padding-right: 10rem;
+		padding-left: 10rem;
+
+		.swiper-slide {
+			padding-left: 10rem;
+			padding-right: 10rem;
+		}
 	}
 }

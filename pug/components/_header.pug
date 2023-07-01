@@ -1,18 +1,24 @@
 header.header
 	.container
-		a.logo(href="")
-			img(src="img/logo.svg", alt="Fummo")
+		button.burger
+			.bar
+			.bar
+			.bar
 
-		nav
-			ul.nav
-				li #[a(href="") Каталог]
-				li #[a(href="") О нас]
-				li #[a(href="") бренд]
-				li #[a(href="") ответственность]
-				li #[a(href="") Партнерам]
-				li #[a(href="") Контакты]
+		.menu
+			nav
+				ul.nav
+					li #[a(href="") Каталог]
+					li #[a(href="") О нас]
+					li #[a(href="") бренд]
+					li #[a(href="") ответственность]
+					li #[a(href="") Партнерам]
+					li #[a(href="") Контакты]
 
-		a.btn.btn_simple.request_btn(href="") оставить заявку
+			a.btn.btn_simple.request_btn(href="") оставить заявку
+
+			a.logo(href="")
+				img(src="img/logo.svg", alt="Fummo")
 
 	.line
 		include ../svg/line_header

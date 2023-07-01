@@ -31,10 +31,13 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		min-height: 105.3vh;
+		min-height: 100vh;
 
 		&__list {
 			position: relative;
+			display: flex;
+			flex-direction: column;
+			gap: 40rem;
 			align-self: flex-start;
 			max-width: 295rem;
 			margin: 20.2% 10rem 0 0;
@@ -49,10 +52,6 @@
 				line-height: 23rem;
 				letter-spacing: 0.5rem;
 				text-transform: uppercase;
-
-				&:not(:last-child) {
-					margin-bottom: 40rem;
-				}
 			}
 
 			.num {
@@ -86,8 +85,8 @@
 		}
 
 		&__inner {
-			align-self: end;
 			max-width: 752rem;
+			margin-top: 750rem;
 		}
 
 		&__title {
@@ -118,14 +117,14 @@
 	&__bottom {
 		position: relative;
 		margin-top: -7rem;
-		padding-bottom: 250rem;
+		padding-bottom: 190rem;
 		z-index: 2;
 
 		.container {
 			position: relative;
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: flex-end;
 			width: 100%;
 
 			&::after,
@@ -148,15 +147,15 @@
 		}
 	}
 
-	.scroll_down {
-		font-family: inherit;
-		font-size: 18rem;
-		font-weight: 500;
-		background: none;
-		border: none;
-		outline: none;
-		color: $color_white;
-	}
+	// .scroll_down {
+	// 	font-family: inherit;
+	// 	font-size: 18rem;
+	// 	font-weight: 500;
+	// 	background: none;
+	// 	border: none;
+	// 	outline: none;
+	// 	color: $color_white;
+	// }
 
 	&_bg {
 		position: absolute;
@@ -165,10 +164,12 @@
 		right: 0;
 		height: auto;
 		z-index: -1;
+		pointer-events: none;
 
 		video,
 		img {
 			display: block;
+			pointer-events: none;
 		}
 
 		&::after {
@@ -181,5 +182,93 @@
 			background: linear-gradient(to top, #0e0e0e 30%, transparent 100%);
 			pointer-events: none;
 		}
+	}
+}
+
+@media (max-width: 48em) {
+	.banner {
+		margin-bottom: 124rem;
+
+		.swiper {
+			.container {
+				flex-direction: column;
+			}
+			.swiper_buttons {
+				flex-direction: row;
+				position: static;
+				margin-top: 58rem;
+			}
+
+		}
+
+		.slide {
+			&__list {
+				max-width: 211rem;
+				gap: 10.8rem;
+				padding: 73rem 0 30rem;
+				margin: 70rem 0 44rem;
+
+				.line {
+					top: 0;
+					right: 0;
+					width: 237rem;
+					height: 264rem;
+				}
+
+				.num {
+					max-width: 20rem;
+					font-size: 15rem;
+					margin-right: 5rem;
+					margin-left: -2rem;
+				}
+
+				li {
+					font-size: 12rem;
+					line-height: 16rem;
+				}
+			}
+
+			&__inner {
+				margin-top: 45rem;
+			}
+
+			&__title {
+				margin-bottom: 34rem;
+				font-size: 22rem;
+				line-height: 28rem;
+			}
+
+			&__text {
+				position: absolute;
+				bottom: -6rem;
+				right: 0;
+				max-width: 161rem;
+				margin: 0;
+				padding-right: 20rem;
+				font-size: 15rem;
+				line-height: 20rem;
+			}
+		}
+
+		&__bottom {
+			margin-top: 37rem;
+			padding: 0;
+
+			.container {
+				&::before {
+					top: -20rem;
+					left: auto;
+					right: 0;
+					width: 100%;
+					height: 100rem;
+					background-position-x: right;
+					background-image: url(../img/banner/slide_bottom_line_mob.svg);
+				}
+				&::after {
+					content: none;
+				}
+			}
+		}
+
 	}
 }

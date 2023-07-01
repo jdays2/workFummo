@@ -82,3 +82,22 @@
 		}
 	}
 }
+
+@media (max-width:48em) {
+	.swiper {
+
+		&_buttons {
+			max-width: 321rem !important;
+		}
+		&-button {
+
+			&-prev,
+			&-next {
+				width: 80rem;
+				height: 25rem;
+				font-size: 15rem;
+				line-height: 23rem;
+			}
+		}
+	}
+}

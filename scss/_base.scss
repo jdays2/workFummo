@@ -6,6 +6,7 @@
 
 html {
 	position: relative;
+	max-width: 100vw;
 	overflow-x: hidden;
 	min-height: 100vh;
 	box-sizing: border-box;
@@ -21,6 +22,8 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
+	max-width: 100vw;
+	overflow-x: hidden;
 	min-height: 100vh;
 	-webkit-font-smoothing: antialiased;
 	text-decoration-skip: objects;
@@ -33,6 +36,13 @@ body {
 	color: $color_white;
 	margin: 0;
 	padding: 0;
+}
+
+.ofh,
+.ofh body,
+.mob_menu,
+.mob_menu body {
+	overflow: hidden;
 }
 
 main {
@@ -114,10 +124,15 @@ iframe {
 textarea,
 input {
 	font-family: inherit;
+	overflow: hidden;
 
 	&::placeholder {
 		color: inherit;
 	}
+}
+
+.mobile {
+	display: none !important;
 }
 
 .container {
@@ -152,6 +167,23 @@ input {
 
 @media (max-width: 48em) {
 	html {
-		font-size: calc((100 / 375) * 1vw);  // 375 = mobile width
+		font-size: calc((100 / 375) * 1vw); // 375 = mobile width
+	}
+
+	.body {
+		font-size: 15rem;
+		line-height: 20rem;
+	}
+
+	.desctop {
+		display: none !important;
+	}
+
+	.mobile {
+		display: block !important;
+	}
+
+	.container {
+		padding: 0 20rem;
 	}
 }

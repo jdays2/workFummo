@@ -10,17 +10,24 @@
   </head>
   <body>
     <header class="header">
-      <div class="container"><a class="logo" href=""><img src="img/logo.svg" alt="Fummo"></a>
-        <nav>
-          <ul class="nav">
-            <li><a href="">Каталог</a></li>
-            <li><a href="">О нас</a></li>
-            <li><a href="">бренд</a></li>
-            <li><a href="">ответственность</a></li>
-            <li><a href="">Партнерам</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav><a class="btn btn_simple request_btn" href="">оставить заявку</a>
+      <div class="container">
+        <button class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+        <div class="menu">
+          <nav>
+            <ul class="nav">
+              <li><a href="">Каталог</a></li>
+              <li><a href="">О нас</a></li>
+              <li><a href="">бренд</a></li>
+              <li><a href="">ответственность</a></li>
+              <li><a href="">Партнерам</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav><a class="btn btn_simple request_btn" href="">оставить заявку</a><a class="logo" href=""><img src="img/logo.svg" alt="Fummo"></a>
+        </div>
       </div>
       <div class="line">
         <svg width="1920" height="62" viewBox="0 0 1920 62" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +41,8 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide slide">
               <div class="banner_bg">
-                <video src="img/banner/slide_img1.jpg" autoplay poster="img/banner/slide_img1.jpg"></video>
+                <video class="desctop" src="img/banner/slide_img1.jpg" autoplay poster="img/banner/slide_img1.jpg"></video>
+                <video class="mobile" src="img/banner/slide_mob_img1.jpg" autoplay poster="img/banner/slide_mob_img1.jpg"></video>
               </div>
               <div class="container">
                 <ol class="slide__list">
@@ -48,7 +56,7 @@
                   </div>
                 </ol>
                 <div class="slide__inner">
-                  <h1 class="slide__title"><span>Новый </span>лидер на рынке электронных сигарет</h1><a class="btn" href=""><span>о компании</span>
+                  <h1 class="slide__title"><span>Новый </span>лидер на&nbspрынке электронных сигарет</h1><a class="btn" href=""><span>о компании</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
                     </svg></a>
@@ -58,7 +66,8 @@
             </div>
             <div class="swiper-slide slide">
               <div class="banner_bg">
-                <video src="img/banner/slide_img2.jpg" autoplay poster="img/banner/slide_img2.jpg"></video>
+                <video class="desctop" src="img/banner/slide_img2.jpg" autoplay poster="img/banner/slide_img2.jpg"></video>
+                <video class="mobile" src="img/banner/slide_mob_img2.jpg" autoplay poster="img/banner/slide_mob_img2.jpg"></video>
               </div>
               <div class="container">
                 <ol class="slide__list">
@@ -72,7 +81,7 @@
                   </div>
                 </ol>
                 <div class="slide__inner">
-                  <h1 class="slide__title"><span>Новый </span>лидер на рынке электронных сигарет</h1><a class="btn" href=""><span>о компании</span>
+                  <h1 class="slide__title"><span>Новый </span>лидер на&nbspрынке электронных сигарет</h1><a class="btn" href=""><span>о компании</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
                     </svg></a>
@@ -88,7 +97,6 @@
         </div>
         <div class="banner__bottom">
           <div class="container">
-            <button class="scroll_down" type="button">scroll down</button>
             <div class="socials"><a class="social" href="" title="VK">
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="16" fill="none">
                   <path fill="#fff" fill-rule="evenodd" d="M26.3644 1.1111c.2003-.6267 0-1.0822-.8859-1.0822h-2.9458c-.7431 0-1.0862.3989-1.2865.8255 0 0-1.5154 3.6445-3.6315 6.0073-.6862.6833-1.0007.911-1.3725.911-.2002 0-.4579-.2277-.4579-.8538V1.0817c0-.74-.2283-1.0817-.8578-1.0817h-4.6327c-.458 0-.7437.3417-.7437.6833 0 .7117 1.0581.8828 1.1723 2.8756v4.33c0 .9394-.1688 1.1111-.5434 1.1111-1.0007 0-3.4312-3.6728-4.8892-7.8578C5.0063.3133 4.7183 0 3.9746 0h-2.974C.143 0 0 .3983 0 .8256c0 .7688 1.0007 4.6405 4.6609 9.765 2.4306 3.5 5.8905 5.3811 9.0073 5.3811 1.8878 0 2.1161-.4273 2.1161-1.1389V12.185c0-.8539.1716-.9961.7723-.9961.4287 0 1.201.2272 2.9453 1.9072C21.5033 15.0889 21.8464 16 22.9618 16h2.9453c.8578 0 1.2583-.4272 1.0294-1.2528-.2571-.8255-1.2297-2.0211-2.488-3.4444-.6862-.7967-1.7156-1.6795-2.03-2.1067-.4287-.5694-.3145-.7972 0-1.3094-.0287 0 3.5747-5.0678 3.9459-6.7778" clip-rule="evenodd"></path>
@@ -125,6 +133,7 @@
                   <div class="novelty__border"></div>
                   <div class="novelty__title">TROPICAL fruits</div>
                   <div class="novelty__img"><img src="img/novelties/novelty1.png" alt="novelty1"></div>
+                  <div class="novelty__bg novelty__bg_yellow"></div>
                   <div class="novelty__info"><span>затяжек</span><strong>до 1500</strong></div><a class="btn novelty__btn" href=""><span>подробнее</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
@@ -136,6 +145,7 @@
                   <div class="novelty__border"></div>
                   <div class="novelty__title">FOREST BERRIES</div>
                   <div class="novelty__img"><img src="img/novelties/novelty2.png" alt="novelty2"></div>
+                  <div class="novelty__bg novelty__bg_blue"></div>
                   <div class="novelty__info"><span>затяжек</span><strong>до 1500</strong></div><a class="btn novelty__btn" href=""><span>подробнее</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
@@ -147,6 +157,7 @@
                   <div class="novelty__border"></div>
                   <div class="novelty__title">ICE WATERMELON</div>
                   <div class="novelty__img"><img src="img/novelties/novelty3.png" alt="novelty3"></div>
+                  <div class="novelty__bg novelty__bg_green"></div>
                   <div class="novelty__info"><span>затяжек</span><strong>до 1500</strong></div><a class="btn novelty__btn" href=""><span>подробнее</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
@@ -158,6 +169,7 @@
                   <div class="novelty__border"></div>
                   <div class="novelty__title">SWEET STRAWBERRY</div>
                   <div class="novelty__img"><img src="img/novelties/novelty4.png" alt="novelty4"></div>
+                  <div class="novelty__bg novelty__bg_red"></div>
                   <div class="novelty__info"><span>затяжек</span><strong>до 1500</strong></div><a class="btn novelty__btn" href=""><span>подробнее</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
@@ -169,6 +181,7 @@
                   <div class="novelty__border"></div>
                   <div class="novelty__title">TROPICAL fruits</div>
                   <div class="novelty__img"><img src="img/novelties/novelty1.png" alt="novelty1"></div>
+                  <div class="novelty__bg novelty__bg_yellow"></div>
                   <div class="novelty__info"><span>затяжек</span><strong>до 1500</strong></div><a class="btn novelty__btn" href=""><span>подробнее</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
@@ -222,32 +235,76 @@
       </section>
       <section class="section form form_simple">
         <div class="container">
-          <div class="form__left">
-            <div class="section__title form__title">Напишите нам,<br>и мы предоставим всю  <span> необходимую </span>информацию</div>
-            <div class="form__img"><img src="img/forms/form_simple.png" alt=""></div>
-          </div>
-          <form>
-            <label><span class="label_border"></span>
-              <input type="text" placeholder="ФИО">
-            </label>
-            <label><span class="label_border"></span>
-              <input type="text" placeholder="+7 ___ ___ __ __">
-            </label>
-            <label><span class="label_border"></span>
-              <input type="text" placeholder="E-mail">
-            </label>
-            <label><span class="label_border"></span>
-              <textarea rows="1" placeholder="Сообщение"></textarea>
-            </label>
-            <button class="btn" type="submit"><span>отправить</span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
+          <div class="form__inner">
+            <div class="section__title form__title">Напишите нам,<br>и мы предоставим всю  <span> необходимую </span>информацию
+              <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.9995 0L25.7419 24.7427L49.9995 25.5L25.7419 26.2573L24.9995 51L24.257 26.2573L-0.000549316 25.5L24.257 24.7427L24.9995 0Z" fill="#D9D9D9"></path>
               </svg>
-            </button>
-          </form>
+            </div>
+            <form>
+              <label><span class="label_border"></span>
+                <input type="text" placeholder="ФИО">
+              </label>
+              <label><span class="label_border"></span>
+                <input type="text" placeholder="+7 ___ ___ __ __">
+              </label>
+              <label><span class="label_border"></span>
+                <input type="text" placeholder="E-mail">
+              </label>
+              <label><span class="label_border"></span>
+                <textarea rows="1" placeholder="Сообщение"></textarea>
+              </label>
+              <button class="btn" type="submit"><span>отправить</span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.12802 24.0987L24.0981 7.12766M24.0981 7.12766C24.0981 7.12766 17.545 15.4626 24.3757 22.2933M24.0981 7.12766C24.0981 7.12766 15.7631 13.6807 9.52645 7.44401" fill="none" stroke="#171414" stroke-width="1.5"></path>
+                </svg>
+              </button>
+            </form>
+            <div class="form__img"><img src="img/forms/form_simple.png" alt="">
+              <div class="line">
+                <svg width="1033" height="284" viewBox="0 0 1033 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M-27 1.45581L666.832 1.45576C670.181 1.45576 673.433 2.57647 676.071 4.63937L1032 282.956" stroke="url(#paint0_linear_5_573)" stroke-opacity="0.3" fill="none"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_5_573" x1="542.5" y1="1.45574" x2="566.5" y2="263.956" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white"></stop>
+                      <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="smoke"><img src="" alt=""></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left"><a class="logo" href=""><img src="img/logo.svg" alt="Fummo"></a>
+          <div class="year">@
+            <script>
+              document.write(new Date().getFullYear())
+              
+            </script>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__contacts"><a href="tel:88000000000">8 800 000 00 00</a><a href="mailto:fummo@info.ru">fummo@info.ru</a></div>
+          <div class="footer__policy"><a href="">политика конфиденциальности</a><a href="">политика cookie</a></div><a class="developer" href=""><img src="img/developer.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="line">
+        <svg width="1920" height="111" viewBox="0 0 1920 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1933 0.5H1096.79C1093.37 0.5 1090.05 1.67171 1087.38 3.82043L959.12 107.18C956.454 109.328 953.133 110.5 949.708 110.5H-12" stroke="url(#paint0_linear_168_3030)" stroke-opacity="0.3" fill="none"></path>
+          <defs>
+            <linearGradient id="paint0_linear_168_3030" x1="1450" y1="36.9998" x2="350.736" y2="737.381" gradientUnits="userSpaceOnUse">
+              <stop stop-color="white"></stop>
+              <stop offset="0.947988" stop-color="white" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </footer>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
