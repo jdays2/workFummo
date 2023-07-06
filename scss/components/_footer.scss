@@ -27,12 +27,14 @@
 	.logo {
 		display: inline-block;
 		margin-bottom: 13rem;
+		width: 100%;
+		max-width: 167rem;
 	}
 
 	&__right {
 		display: grid;
 		grid-template-columns: repeat(2, auto);
-		grid-gap: 20rem 50rem;
+		grid-gap: 17rem 50rem;
 		margin-top: 45rem;
 		margin-bottom: 92rem;
 	}
@@ -60,6 +62,8 @@
 		grid-row-start: 1;
 		grid-row-end: 3;
 		display: flex;
+		width: 100%;
+		max-width: 216rem;
 	}
 
 	.link {

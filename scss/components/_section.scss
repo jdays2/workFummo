@@ -5,6 +5,11 @@
 		font-family: AkzidenzGroteskPro;
 		font-weight: 700;
 		text-transform: uppercase;
+
+		strong,
+		span {
+			color: $color_pink;
+		}
 	}
 }
 

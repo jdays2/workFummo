@@ -1,0 +1,35 @@
+.descr {
+	margin-bottom: 210rem;
+
+	.section__title {
+		max-width: 950rem;
+		margin-bottom: 20rem;
+	}
+
+	.text {
+		max-width: 662rem;
+		margin-bottom: 20rem;
+		margin-left: auto;
+		font-size: 18rem;
+		font-weight: 300;
+		line-height: 26rem;
+	}
+}
+
+
+@media (max-width:48em) {
+	.descr {
+		margin-bottom: 84rem;
+
+		.section__title {
+			margin-bottom: 28rem;
+		}
+
+		.text {
+			margin-bottom: 24rem;
+			margin-left: 0;
+			font-size: 15rem;
+			line-height: 134%;
+		}
+	}
+}

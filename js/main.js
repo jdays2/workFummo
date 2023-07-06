@@ -41,14 +41,14 @@ document.addEventListener("DOMContentLoaded", function (evt) {
 		}
 	});
 
-	$(document).on('click', '.novelties__filter_btn', function (evt) {
+	$(document).on('click', '.filter_btn', function (evt) {
 		evt.preventDefault();
 		let $this = $(this);
 		let thisPos = $this.position().left;
 		let thisWidth = $this.outerWidth();
 		let $indicator = $this.siblings('.indicator');
 
-		$('.novelties__filter_btn').removeClass('active');
+		$('.filter_btn').removeClass('active');
 		$this.addClass('active');
 
 		$indicator.css({
@@ -78,6 +78,14 @@ document.addEventListener("DOMContentLoaded", function (evt) {
 	$(document).on('scroll', function (evt) {
 		let thisScroll = $(this).scrollTop();
 		headerState(thisScroll);
+
+		// let $responsibility = $('.responsibility');
+		// let responseOffset = $responsibility.position().top;
+		// let coef = ((thisScroll + 500) - responseOffset);
+
+		// if (thisScroll + 500 > responseOffset) {
+		// 	$('.responsibility__left').css('margin-top', coef + 'rem');
+		// }
 	});
 
 	$(document).on('click', '.burger', function (evt) {
@@ -85,6 +93,15 @@ document.addEventListener("DOMContentLoaded", function (evt) {
 		$('html').toggleClass('mob_menu');
 		$(this).toggleClass('cross');
 	});
+
+	// $(document).on('wheel', function (evt) {
+	// 	if (evt.originalEvent.wheelDelta >= 0) {
+	// 		console.log('Вверх');
+	// 	} else {
+	// 		console.log('Вниз');
+	// 	}
+	// });
+
 
 
 })

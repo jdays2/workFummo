@@ -1,0 +1,16 @@
+extends components/_base
+
+append vars
+	- title = 'О нас'
+
+block body-start
+	include components/_header
+
+block content
+	main
+		include components/banner_about
+		include components/descr
+		include components/news
+
+block body-end
+	include components/_footer

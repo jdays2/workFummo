@@ -1,0 +1,168 @@
+.news {
+	margin-bottom: 140rem;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__top {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 75rem;
+	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 58rem 66rem;
+		width: 100%;
+		margin-bottom: 58rem;
+	}
+
+	.item {
+		&__preview {
+			position: relative;
+			max-width: 807rem;
+			height: 382rem;
+			margin-bottom: 20rem;
+			border-radius: 10rem;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 10rem;
+				overflow: hidden;
+			}
+		}
+
+		.play_button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			background: none;
+			border: none;
+			outline: none;
+			background: url(../img/news/play.svg) no-repeat 53.5% 68.5% / 220rem;
+		}
+
+		&_bg {
+
+			.play_button {
+				display: none;
+			}
+
+			.item {
+				&__preview {
+					max-width: 807rem;
+					height: 472rem;
+					padding: 60rem;
+					border-radius: 15rem;
+
+					&::after {
+						content: '';
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						background: url(../img/news/news_bg.png) no-repeat center/cover;
+						z-index: -1;
+					}
+				}
+			}
+		}
+
+		&__date {
+			margin-bottom: 15rem;
+			font-size: 18rem;
+			font-weight: 300;
+			line-height: 26rem;
+		}
+
+		&__title {
+			max-width: 500rem;
+			font-size: 18rem;
+			font-family: AkzidenzGroteskPro, sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+
+	.more {
+		align-self: flex-end;
+	}
+}
+
+
+@media (max-width:48em) {
+	.news {
+		margin-bottom: 56rem;
+
+		&__top {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			margin-bottom: 45rem;
+		}
+
+		.section__title {
+			margin-bottom: 25rem;
+		}
+
+		.filter {
+			align-self: flex-start;
+		}
+
+		&__container {
+			display: flex;
+			flex-direction: column;
+			gap: 37rem;
+			margin-bottom: 38rem;
+		}
+
+		.item {
+			&__preview {
+				height: 196rem;
+			}
+
+			.play_button {
+				background-size: 131rem;
+				background-position: 56% 77%;
+			}
+
+			&_bg {
+
+				.item {
+					&__preview {
+						height: 196rem;
+						padding: 25rem;
+					}
+				}
+			}
+
+			&__date {
+				font-size: 12rem;
+				line-height: 120%;
+			}
+
+			&__title {
+				font-size: 12rem;
+				line-height: 127%;
+			}
+		}
+
+		.more {
+			align-self: flex-start;
+		}
+
+	}
+}

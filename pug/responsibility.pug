@@ -1,0 +1,16 @@
+extends components/_base
+
+append vars
+	- title = 'Ответственность'
+
+block body-start
+	include components/_header
+
+block content
+	main
+		include components/banner_response
+		include components/section_responsibility
+		include components/certificates
+
+block body-end
+	include components/_footer

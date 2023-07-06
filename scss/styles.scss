@@ -5,18 +5,18 @@
 @import "components/header";
 @import "components/footer";
 @import "components/burger";
+@import "components/filter";
 @import "components/section";
 @import "components/btns";
 @import "components/swipers";
 @import "components/banner";
+@import "components/banner_about";
+@import "components/banner_response";
 @import "components/socials";
 @import "components/novelties";
 @import "components/advantages";
 @import "components/forms";
-
-h1 {
-	font-family: AkzidenzGroteskPro;
-	font-weight: 700;
-	font-size: 45rem;
-	line-height: 58rem;
-}
+@import "components/descr_about";
+@import "components/news";
+@import "components/responsibility";
+@import "components/certificates";

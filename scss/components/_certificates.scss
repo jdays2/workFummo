@@ -1,0 +1,164 @@
+.certificates {
+	margin-bottom: 140rem;
+
+	.section {
+		&__title {
+			margin-bottom: 40rem;
+		}
+
+		&__text {
+			max-width: 720rem;
+			margin-bottom: 70rem;
+			font-size: 18rem;
+			line-height: 23rem;
+			font-weight: 500;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 45rem 65rem;
+	}
+}
+
+.certificate {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 390rem;
+	padding: 24rem;
+	overflow: hidden;
+
+	&__title {
+		max-width: 250rem;
+		margin-bottom: 50rem;
+		text-align: center;
+		font-size: 28rem;
+		line-height: 36rem;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		right: 1rem;
+		z-index: -1;
+		opacity: 0;
+		transition: opacity 500ms;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&__border {
+		$offset: 100rem;
+		position: absolute;
+		top: $offset;
+		left: 0;
+		right: 0;
+		bottom: $offset;
+		border: 1rem solid #5c5a5a;
+		border-top: none;
+		border-bottom: none;
+		z-index: -1;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: -$offset;
+			right: -1rem;
+			left: -1rem;
+			height: $offset;
+			background: url(../img/certificates/certificate_border.svg) no-repeat center top / 100%;
+		}
+
+		&::after {
+			top: auto;
+			bottom: -$offset;
+			background-position: center bottom;
+		}
+	}
+
+	.btn {
+		z-index: 2;
+	}
+
+	&:hover {
+		.certificate {
+			&__bg {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+@media (max-width:48em) {
+	.certificates {
+		margin-bottom: 56rem;
+
+		.section {
+			&__title {
+				margin-bottom: 29rem;
+			}
+
+			&__text {
+				margin-bottom: 39rem;
+				font-size: 15rem;
+				line-height: 20rem;
+			}
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			gap: 40rem;
+		}
+	}
+
+	.certificate {
+		min-height: 110rem;
+		padding: 20rem;
+		flex-direction: row;
+
+		&__title {
+			max-width: 150rem;
+			margin-bottom: 0;
+			text-align: left;
+			font-size: 15rem;
+			line-height: 20rem;
+			font-weight: 500;
+		}
+
+		&__bg {
+			display: none;
+		}
+
+		&__border {
+			$offset: 50rem;
+			top: $offset;
+			bottom: $offset;
+
+
+			&::before,
+			&::after {
+				top: -$offset;
+				height: $offset;
+				background: url(../img/certificates/certificate_border_mob.svg) no-repeat center top / 100%;
+			}
+
+			&::after {
+				top: auto;
+				bottom: -$offset;
+				background-position: center bottom;
+			}
+		}
+
+	}
+}

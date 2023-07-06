@@ -1,0 +1,68 @@
+.filter {
+	align-self: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30rem;
+
+	.indicator {
+		position: absolute;
+		bottom: -10rem;
+		left: 0;
+		width: 51rem;
+		height: 6rem;
+		transition: 500ms;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 6rem;
+			width: 6rem;
+			background-color: $color_pink;
+			border-radius: 6rem;
+		}
+	}
+
+	&_btn {
+		padding: 5rem 10rem;
+		font-size: 18rem;
+		line-height: 100%;
+		font-weight: 500;
+		border: none;
+		background: none;
+		outline: none;
+		font-family: inherit;
+		color: $gray_text;
+		transition: color 500ms;
+
+		&.active {
+			color: $color_white;
+		}
+	}
+}
+
+@media (max-width:48em) {
+
+	.filter {
+		gap: 34rem;
+
+		.indicator {
+			bottom: -5rem;
+			width: 46rem;
+		}
+
+		&_btn {
+			font-size: 15rem;
+			line-height: 19rem;
+
+			&.active {
+				font-weight: bold;
+			}
+		}
+	}
+
+}
