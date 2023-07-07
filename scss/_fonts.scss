@@ -5,6 +5,7 @@
 	font-style: normal;
 }
 
+
 @font-face {
 	font-family: EuclidCircularA;
 	src: url('../fonts/EuclidCircularA/EuclidCircularA-Bold.eot');
@@ -38,6 +39,18 @@
 		url('../fonts/EuclidCircularA/EuclidCircularA-Medium.woff') format('woff'),
 		url('../fonts/EuclidCircularA/EuclidCircularA-Medium.ttf') format('truetype');
 	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: EuclidCircularA;
+	src: url('../fonts/EuclidCircularA/EuclidCircularA-Regular.eot');
+	src: local('Euclid Circular A Regular'), local('EuclidCircularA-Regular'),
+		url('../fonts/EuclidCircularA/EuclidCircularA-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/EuclidCircularA/EuclidCircularA-Regular.woff2') format('woff2'),
+		url('../fonts/EuclidCircularA/EuclidCircularA-Regular.woff') format('woff'),
+		url('../fonts/EuclidCircularA/EuclidCircularA-Regular.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
 }
 

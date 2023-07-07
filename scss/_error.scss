@@ -1,0 +1,46 @@
+.error {
+  padding: 282rem 473rem 120rem;
+  &__main-text {
+    display: flex;
+    gap: 37rem;
+    align-items: center;
+
+    color: #FFF;
+    font-family: "AkzidenzGroteskPro";
+    font-size: 350rem;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    span {
+      width: 258rem;
+      height: 291rem;
+    }
+
+    strong {
+      transform: scaleX(1.5);
+    }
+
+  &__title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Akzidenz-Grotesk Pro";
+    font-size: 45rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 12rem;
+  }
+  
+  &__subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: "Euclid Circular A";
+    font-size: 28rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36rem;
+  }
+  }
+}
