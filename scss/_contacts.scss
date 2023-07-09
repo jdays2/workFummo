@@ -1,0 +1,12 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+  width: 100%;
+	position: relative;
+
+  .partners__map-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+}
