@@ -1765,6 +1765,12 @@ input::placeholder {
   align-items: center;
   padding: 0 120rem;
 }
+.brand__slider-wrapper .swiper_control {
+  position: absolute;
+  z-index: 100;
+  bottom: 206rem;
+  right: 244rem;
+}
 .brand__slider-bg {
   position: relative;
   width: 100%;
@@ -2050,6 +2056,14 @@ input::placeholder {
     width: 100%;
     padding: 0 20rem;
   }
+  .brand__slider-wrapper .swiper_control {
+    bottom: 176rem;
+    position: absolute;
+    right: 16rem;
+    z-index: 100;
+    width: 346rem;
+    justify-content: space-around;
+  }
   .brand__slider-title {
     display: flex;
     flex-direction: column;
@@ -2155,6 +2169,10 @@ input::placeholder {
     width: fit-content;
   }
 }
+main {
+  overflow: hidden;
+}
+
 .header {
   position: fixed;
   top: 0;
