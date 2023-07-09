@@ -4,7 +4,7 @@ function init() {
 	// Создание карты
 	const map = new ymaps.Map('map', {
 		center: [55.747459, 37.62528],
-		zoom: 14,
+		zoom: 15,
 		type: 'yandex#map',
 		yandexMapDisablePoiInteractivity: true,
 		controls: [],

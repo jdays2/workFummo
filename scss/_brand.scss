@@ -340,6 +340,13 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 0 120rem;
+
+		.swiper_control {
+			position: absolute;
+			z-index: 100;
+			bottom: 206rem;
+			right: 244rem;
+		}
 	}
 
 	&__slider-bg {
@@ -477,9 +484,9 @@
 			margin-bottom: 40rem;
 		}
 
-    .section__title {
-      margin-bottom: 9rem!important;
-  }
+		.section__title {
+			margin-bottom: 9rem !important;
+		}
 
 		.responsibility__left {
 			.btn {
@@ -497,7 +504,7 @@
 		.responsibility__list {
 			margin-top: 42.05rem;
 			gap: 40rem;
-      width: 100%;
+			width: 100%;
 
 			.item {
 				width: 335rem;
@@ -568,13 +575,12 @@
 			font-style: normal;
 			font-weight: 500;
 			line-height: 135%;
-			margin-bottom: 29rem
+			margin-bottom: 29rem;
 		}
 
 		&__info-btns {
 			flex-direction: column;
 			gap: 16.95rem;
-      
 
 			.btn {
 				width: 218rem;
@@ -637,7 +643,7 @@
 		}
 
 		&__benefits-list {
-      margin-bottom: 80rem;
+			margin-bottom: 80rem;
 			gap: 40rem;
 		}
 
@@ -676,6 +682,15 @@
 		&__slider-wrapper {
 			width: 100%;
 			padding: 0 20rem;
+
+			.swiper_control {
+				bottom: 176rem;
+				position: absolute;
+				right: 16rem;
+				z-index: 100;
+				width: 346rem;
+				justify-content: space-around;
+			}
 		}
 
 		&__slider-title {
@@ -683,7 +698,7 @@
 			flex-direction: column;
 			gap: 14rem;
 			padding: 0;
-      margin: 0;
+			margin: 0;
 		}
 
 		.slider-bg {
@@ -742,61 +757,65 @@
 			width: 311rem !important;
 		}
 
-    &__card-discript {
-      width: 279rem;
-      
-      .star-icon {
-        display: block;
-        width: 26rem;
-        height: 27rem;
-      }
+		&__card-discript {
+			width: 279rem;
 
-      flex-direction: column;
-      gap: 9rem;
-      align-items: flex-start;
+			.star-icon {
+				display: block;
+				width: 26rem;
+				height: 27rem;
+			}
 
-      font-size: 12rem;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 120%;
-    }
+			flex-direction: column;
+			gap: 9rem;
+			align-items: flex-start;
 
-    &__slider-card {
-      padding: 11.5rem 16rem 20.5rem;
-      justify-content:unset;
-      gap: 156rem;
-    }
+			font-size: 12rem;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 120%;
+		}
 
-    &__card-title {
-      gap: 8rem;
-      span {
-        font-size: 12rem;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 120%;
-      }
-      p {
-        font-size: 16rem;
-        font-style: normal;
-        width: 279rem;
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase;
-      }
-    }
+		&__slider-card {
+			padding: 11.5rem 16rem 20.5rem;
+			justify-content: unset;
+			gap: 156rem;
+		}
 
-    &__card-head {
-      width: 100%;
+		&__card-title {
+			gap: 8rem;
+			span {
+				font-size: 12rem;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 120%;
+			}
+			p {
+				font-size: 16rem;
+				font-style: normal;
+				width: 279rem;
+				font-weight: 700;
+				line-height: normal;
+				text-transform: uppercase;
+			}
+		}
 
-      .btn {
-        position: absolute;
-        bottom: 74.95rem;
-        top: auto;
-        left: 16rem;  
-        width: -webkit-fit-content;  
-        width: -moz-fit-content;  
-        width: fit-content; 
-      }
-    }
+		&__card-head {
+			width: 100%;
+
+			.btn {
+				position: absolute;
+				bottom: 74.95rem;
+				top: auto;
+				left: 16rem;
+				width: -webkit-fit-content;
+				width: -moz-fit-content;
+				width: fit-content;
+			}
+		}
 	}
+}
+
+main {
+  overflow: hidden;
 }
