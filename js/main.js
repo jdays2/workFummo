@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function (evt) {
-
+document.addEventListener('DOMContentLoaded', function (evt) {
 	const debounced = [];
 	const cancelFunc = (timeout) => () => {
 		clearTimeout(timeout);
@@ -22,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function (evt) {
 
 	const swiper_banner = new Swiper('.swiper_banner', {
 		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
 		},
 		effect: 'fade',
 	});
@@ -31,14 +30,14 @@ document.addEventListener("DOMContentLoaded", function (evt) {
 	const swiper_novelties = new Swiper('.swiper_novelties', {
 		slidesPerView: 1.22,
 		navigation: {
-			nextEl: ".novelties__top .swiper-button-next",
-			prevEl: ".novelties__top .swiper-button-prev",
+			nextEl: '.novelties__top .swiper-button-next',
+			prevEl: '.novelties__top .swiper-button-prev',
 		},
 		breakpoints: {
 			768: {
 				slidesPerView: 4,
-			}
-		}
+			},
+		},
 	});
 
 	$(document).on('click', '.filter_btn', function (evt) {
@@ -55,13 +54,12 @@ document.addEventListener("DOMContentLoaded", function (evt) {
 			left: thisPos + 'rem',
 			width: thisWidth + 'rem',
 		});
-
 	});
 
 	$(document).on('input', 'textarea', function () {
 		debounce(() => {
 			this.style.height = 'auto';
-			$(this).outerHeight((this.scrollHeight) + 'px');
+			$(this).outerHeight(this.scrollHeight + 'px');
 		}, 100);
 	});
 
@@ -101,7 +99,29 @@ document.addEventListener("DOMContentLoaded", function (evt) {
 	// 		console.log('Вниз');
 	// 	}
 	// });
+});
 
+//логика placeholder для input
+const inputs = document.querySelectorAll('.partners__form-item');
 
+inputs.forEach((input) => {
+	const placeholder = input.nextElementSibling;
 
-})
+	input.addEventListener('input', () => {
+		if (input.value.trim() !== '') {
+			placeholder.style.display = 'none';
+		} else {
+			placeholder.style.display = 'flex';
+		}
+	});
+});
+
+const swiper_banner = new Swiper('.brand__swiper', {
+	slidesPerView: 1, // Отображение одной карточки
+	spaceBetween: 1000,
+
+	navigation: {
+	  nextEl: '.swiper-button-next', // Кнопка "следующий слайд"
+	  prevEl: '.swiper-button-prev', // Кнопка "предыдущий слайд"
+	},
+});
